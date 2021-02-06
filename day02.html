@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: tomato;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
+        background-color: blueviolet;
+        border: black;
+      }
+      .centerbox {
+        width: 250px;
+        height: 250px;
+        background-color: wheat;
+        border: solid black;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .centerbox__top {
+        background-color: teal;
+        border: solid white;
+      }
+
+      .centerbox__middle {
+        background-color: teal;
+        width: 200px;
+        border: dashed white;
+      }
+
+      .centerbox__bottom {
+        background-color: teal;
+        border: solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="centerbox">
+      <div class="centerbox__top"></div>
+      <div class="centerbox__middle"></div>
+      <div class="centerbox__bottom"></div>
+    </div>
+  </body>
+</html>
