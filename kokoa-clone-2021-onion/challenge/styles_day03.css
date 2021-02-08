@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.title {
+  display: flex;
+  height: 100px;
+  width: 500px;
+  justify-content: center;
+}
+
+.horizonBox {
+  display: flex;
+  flex-wrap: wrap;
+  height: 700px;
+  width: 500px;
+  justify-content: center;
+  align-content: center;
+}
+
+.horizonBox__inner {
+  height: 260px;
+  width: 150px;
+  /* background-color: tomato; */
+  margin: 10px;
+  border: 5px solid white;
+}
+
+.tomato {
+  background-color: tomato;
+}
+
+.teal {
+  background-color: teal;
+}
+
+.burlywood {
+  background-color: burlywood;
+}
+
+.thistle {
+  background-color: thistle;
+}
+.horizonBox__inner__text {
+  height: 80px;
+  width: 150px;
+  background-color: white;
+  margin-top: 20px;
+  border: 1px solid white;
+}
