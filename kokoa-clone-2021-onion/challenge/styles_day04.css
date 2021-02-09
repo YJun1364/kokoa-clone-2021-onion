@@ -1,0 +1,85 @@
+body {
+  background-color: #6bbcbe;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dotContanier {
+  /* background-color: blanchedalmond; */
+  border-radius: 50%;
+  height: 20vh;
+  width: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25vh;
+  animation: dotRotate 1s ease-in-out infinite;
+}
+
+.dot {
+  height: 15%;
+  width: 15%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+@keyframes dotRotate {
+  0% {
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.barContanier {
+  /* background-color: blueviolet; */
+  height: 20vh;
+  width: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15vh;
+  animation: stopWave 1s ease-in-out infinite;
+}
+
+.bar {
+  background-color: white;
+  position: relative;
+  height: 70%;
+  width: 15%;
+  /* padding: 5px; */
+  border-radius: 2px;
+}
+
+.bar1 {
+  animation: barWave 1s ease-in-out infinite;
+}
+.bar2 {
+  animation: barWave 1s ease-in-out 0.1s infinite;
+}
+.bar3 {
+  animation: barWave 1s ease-in-out 0.2s infinite;
+}
+.bar4 {
+  animation: barWave 1s ease-in-out 0.3s infinite;
+}
+.bar5 {
+  animation: barWave 1s ease-in-out 0.4s infinite;
+}
+
+@keyframes barWave {
+  0% {
+  }
+  20% {
+    transform: scaleY(2);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+  }
+}
