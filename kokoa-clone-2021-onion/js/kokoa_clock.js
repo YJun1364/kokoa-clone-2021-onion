@@ -1,5 +1,5 @@
 const clockContainer = document.querySelector(".kokoa_clock");
-const innerTime = clockContainer.querySelector("#clock");
+const innerTime = clockContainer.querySelector(".clock");
 
 function inputTime(hours, minutes) {
   innerTime.innerHTML = `${hours < 10 ? "0" + hours : hours}:${
