@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Welcome to KoKoa-Talk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column kokoa_clock">
+        <span class="clock">18:43</span>
+      </div>
+      <div class="status-bar__column kokoa_battery">
+        <span class="kokoa_battery_num">110%</span>
+        <span class="kokoa_battery_icon"></span>
+        <span class="kokoa_bolt_icon"></span>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">
+        if you have a Kokoa Acount, log in with your Email or phone number.
+      </p>
+    </header>
+    <form action="friends.html" method="GET" id="login-form">
+      <input
+        name="username"
+        required
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input name="password" required type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <a href="#">Find Kokoa Acount or Password</a>
+    </form>
+
+    <script src="js/kokoa_clock.js"></script>
+    <script src="js/kokoa_battery.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
