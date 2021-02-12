@@ -14,4 +14,31 @@
 }
 .nav__link {
   color: #2f363e;
+  position: relative;
+}
+
+.nav__notification {
+  background-color: tomato;
+  /* display: block; span 은 크기가 없어서  크기를 지정하려면 block 으로 설정해야 한다.  */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute; /* position:abs 을 사용하려면 상위 container 에 position:relative 설정이 되어있어야 한다*/
+  left: 20px;
+  bottom: 15px;
+}
+
+.nav__alarm {
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  left: 35px;
 }
