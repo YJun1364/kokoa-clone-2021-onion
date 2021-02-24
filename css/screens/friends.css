@@ -3,7 +3,24 @@
   display: block;
   background-color: #fafafa;
   padding: 10px 0px;
+  margin-bottom: 15px;
 }
 #friends-display-link i {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen {
+  padding: 0px var(--horizeontal-space);
+}
+
+.friends-screen__channel-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.friends-screen__channel {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  padding-top: 15px;
 }
