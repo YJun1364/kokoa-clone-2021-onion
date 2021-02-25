@@ -12,12 +12,16 @@
 
 .user-component__column:last-child {
   color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .user-component__avatar {
   width: 70px;
   height: 70px;
-  border-radius: 25px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   margin-right: 20px;
 }
 
@@ -34,6 +38,7 @@
 .user-component__avatar__xl {
   width: 80px;
   height: 80px;
+  border-radius: 35px;
 }
 
 .user-component__avatar__sm {
@@ -48,4 +53,9 @@
 
 .color-nomal {
   color: black;
+}
+
+.user-component__time {
+  display: block;
+  margin-bottom: 5px;
 }

@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap");
 @import "reset.css";
 @import "variable.css";
+
 /* Components */
 @import "components/status-bar.css";
+@import "components/nav-bar.css"; /* Nav-bar */
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+
 /* Screens */
 @import "screens/login.css";
-/* Nav-bar */
-@import "components/nav-bar.css";
-
-@import "components/screen-header.css";
-
-@import "components/user-component.css";
 @import "screens/friends.css";
+
 body {
   color: #2e363e;
   font-family: "Dosis", sans-serif;
