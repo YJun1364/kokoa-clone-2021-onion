@@ -13,6 +13,9 @@
 .user-component__column:last-child {
   color: rgba(0, 0, 0, 0.5);
   display: flex;
+}
+
+.user-component__column__badge {
   flex-direction: column;
   align-items: flex-end;
 }
