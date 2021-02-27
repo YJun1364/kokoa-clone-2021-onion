@@ -37,3 +37,29 @@
   color: var(--gray);
   font-size: 18px;
 }
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.open-chat__header span {
+  color: var(--gray);
+}
+
+.open-post {
+  display: flex;
+}
+
+.open-post__title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.open-post__hashtags {
+  text-transform: uppercase;
+  color: var(--gray);
+}
