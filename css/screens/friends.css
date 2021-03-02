@@ -25,3 +25,6 @@
   border-top: var(--main-border);
   padding-top: 15px;
 }
+.user-component__title {
+  color: black;
+}

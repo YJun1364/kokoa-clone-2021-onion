@@ -1,0 +1,25 @@
+.user-component__subtitle {
+  display: flex;
+  font-size: 14px;
+}
+
+.more-icon {
+  color: tomato;
+}
+
+.more-suggestions {
+  margin-top: 50px;
+  border-top: var(--main-border);
+  padding-top: 40px;
+}
+
+.more-suggestions__title {
+  margin-bottom: 20px;
+}
+
+.more-suggestions__icon-img {
+}
+
+.more-suggestions__icon-text {
+  font-size: 12px;
+}

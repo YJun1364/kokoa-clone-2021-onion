@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>More - KoKoa-Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column kokoa_clock">
+        <span class="clock">18:43</span>
+      </div>
+      <div class="status-bar__column kokoa_battery">
+        <span class="kokoa_battery_num">110%</span>
+        <span class="kokoa_battery_icon"></span>
+        <span class="kokoa_bolt_icon"></span>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">More</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span
+        ><span><i class="fas fa-music fa-lg"></i></span
+            ><span><i class="fas fa-cog fa-lg"></i></span>
+      </div>
+    </header> 
+    <main class="friends-screen">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar "
+              src="img/yongjun1.jpg"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">Yongjun</h4>
+              <div class="user-component__subtitle"><h6>+ 372-486-284 &nbsp;</h6>
+                  <div class="more-icon"><i class="fas fa-exclamation-circle"></i>
+                </div>        
+            </div>
+     
+        </div>
+          </div>
+
+          <div class="user-component__column">
+            <i class="far fa-comment-alt fa-lg" ></i>
+          </div>
+          
+        </div>
+
+        <main class="main-screen">
+            <div class="icon-row">
+                <div class="icon-row__icon"><i class="far fa-calendar-check"></i>
+                    <span>Calendar</span>
+                </div>
+                <div class="icon-row__icon"><i class="fas fa-archive"></i>
+                    <span>Talk Drive</span>
+                </div>
+                <div class="icon-row__icon"><i class="far fa-smile-wink"></i>
+                    <span>Emoticons</span>
+                </div>
+                <div class="icon-row__icon"><i class="fas fa-brush"></i>
+                    <span>Themes</span>
+                </div>
+            </div>
+            <div class="icon-row icon-row__half">
+                <div class="icon-row__icon"><i class="fas fa-donate"></i>
+                    <span>Account</span>
+                </div>
+                <div class="icon-row__icon"><i class="far fa-envelope"></i>
+                    <span>Openchat</span>
+                </div>
+                <div class="icon-row__icon non-display"><i class="far fa-envelope "></i>
+                <span class="non-display">non</span></div>
+                <div class="icon-row__icon non-display"><i class="far fa-envelope"></i>
+                <span class="non-display">non</span></div>
+            </div>
+            
+            <div class="more-suggestions">
+                <h4 class="more-suggestions__title">Suggestions</h4>
+                <div class="more-suggestions__icons">
+                    <div class="more-suggestions__icon">
+                        <div class="more-suggestions__icon-img"><i class="fas fa-quote-right"></i></div>
+                        <span class="more-suggestions__icon-text">Kakao Story</span>
+                    </div>
+                  
+                </div>
+            </div>
+        </main>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html"
+            ><span class="nav__notification badge">1</span>
+            <i class="far fa-comment fa-2x"></i></i
+          ></a>
+        </li>
+            <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+         <li class="nav__btn">
+          <a class="nav__link" href="more.html"
+            ><span class="nav__alarm"></span>
+            <i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <script src="js/kokoa_clock.js"></script>
+    <script src="js/kokoa_battery.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
