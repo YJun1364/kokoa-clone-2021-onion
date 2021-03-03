@@ -1,0 +1,15 @@
+.settings__setting {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0.1);
+}
+
+.settings-list {
+  border-bottom: var(--main-border);
+  font-size: 18px;
+}
+.settings__setting i {
+  margin-right: 15px;
+  opacity: 0.8;
+}
