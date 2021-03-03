@@ -1,8 +1,12 @@
 .alt-screen-header {
-  padding: 35px 20px;
+  padding: 35px 20px 20px 5px;
+
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 0;
 }
 
 .alt-header__title {
@@ -10,12 +14,22 @@
   font-weight: 500;
 }
 
+.alt-header__column {
+  width: 33%;
+}
+
 .alt-header__column:first-child {
   margin-right: auto;
 }
 
+.alt-header__column:nth-child(2) {
+  text-align: center;
+}
+
 .alt-header__column:last-child {
   margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
 }
 .alt-header__column:last-child span:first-of-type {
   margin-right: 20px;
