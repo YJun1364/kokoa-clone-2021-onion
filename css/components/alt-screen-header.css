@@ -1,12 +1,9 @@
 .alt-screen-header {
   padding: 35px 20px 20px 5px;
-
   display: flex;
   align-items: center;
-  position: fixed;
   width: 100%;
   box-sizing: border-box;
-  top: 0;
 }
 
 .alt-header__title {
