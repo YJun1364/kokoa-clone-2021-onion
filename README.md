@@ -1,5 +1,5 @@
 # kokoa-clone-2021-onion
-## [😁Nomard Coder - Clone Coding (HTML, CSS)](https://repl.it/@YJun1364/kokoa-clone-coding#index.html)
+## [😁Nomard Coder - Clone Coding (HTML, CSS)](https://yjun1364.github.io/kokoa-clone-2021-onion/)
 
 ### ✔ Challenge!
 
