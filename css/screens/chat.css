@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 10000vh;
+  height: 200vh;
 }
 
 #chat-screen .status-bar,
@@ -13,11 +13,44 @@
   z-index: 1;
 }
 
+@keyframes fadeIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
 .main-chat {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 0.2s linear forwards;
 }
 
 .chat-timestamp {
@@ -32,6 +65,10 @@
 .message-row {
   width: 100%;
   display: flex;
+  margin-bottom: 25px;
+  animation: fadeInRight 0.5s linear forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
 }
 
 .message-row__content {
@@ -60,7 +97,7 @@
 .message__balloon {
   background-color: white;
   padding: 6px 8px;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-right: 5px;
   border-top-left-radius: 0px;
   font-size: 18px;
@@ -69,4 +106,115 @@
 .message__time {
   font-size: 10px;
   color: var(--gray);
+}
+/* Modifier (수정자)활용  */
+.message-row__own {
+  justify-content: flex-end;
+  animation: fadeInLeft 0.5s linear forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+.message-row__own .message__balloon {
+  background-color: var(--yellow);
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  margin-left: 5px;
+}
+.message-row__own .message__info {
+  flex-direction: row-reverse;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.reply__column i {
+  color: var(--gray);
+}
+.reply__column:first-child {
+  width: 10%;
+}
+.reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.reply input {
+  height: 30px;
+  width: 100%;
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: 0;
+}
+
+.reply__column:last-child > i {
+  top: 10px;
+  right: 40px;
+}
+
+.reply__column:last-child button {
+  right: -3px;
+  top: 2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  border: none;
+}
+
+.reply__column:last-child button i {
+  color: black;
+}
+
+.reply__column:last-child button :focus,
+.reply__column:last-child button :active {
+  outline: none;
+}
+.reply input {
+  width: 100%;
+  height: 30px;
+  border-radius: 40px;
+  border: var(--main-border);
+  transition: all 0.3s linear;
+}
+
+.reply:focus-within .reply__column:first-child,/* .reply 내부 element 가 focus 된 조건 */
+.reply:focus-within .fa-grin-tongue-wink,
+.reply:focus-within button {
+  opacity: 0;
+  visibility: none;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-grin-tongue-wink,
+.reply button {
+  transition: opacity 0.3s linear;
+}
+
+.reply:focus-within input {
+  width: 115%;
+  transform: translateX(-12%);
+}
+
+@keyframes fadeOut {
+  from {
+    transform: none;
+  }
+  to {
+    background-color: #abc1d1;
+  }
+}
+.reply:focus-within {
+  animation: fadeOut 0.3s linear forwards;
 }

@@ -28,3 +28,28 @@
 .user-component__title {
   color: black;
 }
+
+.splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: hideSplashScreen 0.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+  /* forwards = 애니매이션 종류 후 상태 유지; */
+}
+
+@keyframes hideSplashScreen {
+  form {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+    /* visibility: hidden --> html은 아직 살아있음 ;     */
+  }
+}
