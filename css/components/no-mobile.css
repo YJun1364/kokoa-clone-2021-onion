@@ -5,6 +5,7 @@
   height: 100vh;
   background-color: var(--yellow);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   top: 0;
@@ -12,7 +13,12 @@
 }
 
 @media screen and (max-width: 650px) {
+  /*미디어 쿼리 넓이가 650px 보다 크면 내용 실행 함*/
   .no-mobile {
     display: none;
   }
+}
+
+.no-mobile__message {
+  margin-bottom: 40px;
 }
