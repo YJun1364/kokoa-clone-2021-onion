@@ -12,6 +12,7 @@
 }
 
 @media screen and (max-width: 650px) {
+  /*미디어 쿼리 넓이가 650px 보다 크면 내용 실행 함*/
   .no-mobile {
     display: none;
   }
