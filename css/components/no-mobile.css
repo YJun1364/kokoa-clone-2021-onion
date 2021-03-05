@@ -5,6 +5,7 @@
   height: 100vh;
   background-color: var(--yellow);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   top: 0;
@@ -16,4 +17,8 @@
   .no-mobile {
     display: none;
   }
+}
+
+.no-mobile__message {
+  margin-bottom: 40px;
 }
